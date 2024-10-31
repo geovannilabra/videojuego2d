@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pantalla del Videojuego con Burbujas</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="bg-primary text-white text-center py-4">
+        <h1>Bubble Sky</h1>
+        <img src="assets/portada.jpg" alt="Imagen del Videojuego" class="img-fluid">
+        <footer class="bg-dark text-white text-center py-3">
+            <h4>Créditos</h4>
+            <p>Alfonso Geovanni Labra Trejo 22200190</p>
+            <p>Dilan González Cabañas 22200185</p>
+            <p>Oscar Alexis Muñoz Recendiz 22200349</p>
+        </footer>
+    </header>
+
+    <main class="container my-4">
+        <div id="instructionBox" class="text-center mb-4">
+            <h2>Instrucciones</h2>
+            <p>Haz clic en las burbujas para ganar puntos, tienes 15 segundos.</p>
+            <button id="startButton" class="btn btn-success">Iniciar Juego</button>
+        </div>
+        <canvas id="gameScreen" class="border border-light"></canvas>
+        <div id="scoreBox" class="text-center" style="display: none;">
+            <h2>Fin del Juego</h2>
+            <p>Puntuación: <span id="finalScore"></span></p>
+            <button id="restartButton" class="btn btn-danger">Reiniciar Juego</button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
